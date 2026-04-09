@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Pendaftaran Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Formulir Pendaftaran Siswa</h2>
+  <p>Isi data dengan lengkap & benar</p>
+
+  <form id="form">
+
+    <label>Nama Lengkap *</label>
+    <input type="text" id="nama" placeholder="Contoh: Muhammad Raihan">
+    <small>Nama sesuai identitas</small>
+
+    <label>Kelas *</label>
+    <input type="text" id="kelas" placeholder="Contoh: XII IPA 2 / 11A / 7B">
+    <small>Kelas saat ini / tujuan</small>
+
+    <label>Pilih Ekstrakurikuler (3 pilihan)</label>
+    <div class="box">
+      <label><input type="checkbox"> Basket</label>
+      <label><input type="checkbox"> Futsal</label>
+      <label><input type="checkbox"> Paduan Suara</label>
+    </div>
+    <small>Boleh memilih lebih dari satu (opsional)</small>
+
+    <label>Pilih Jadwal Belajar *</label>
+    <div class="box">
+      <label><input type="radio" name="jadwal"> Pagi (07.00 - 12.00)</label>
+      <label><input type="radio" name="jadwal"> Siang (12.30 - 17.00)</label>
+      <label><input type="radio" name="jadwal"> Sore (17.30 - 20.30)</label>
+      <label><input type="radio" name="jadwal"> Campuran (fleksibel)</label>
+    </div>
+    <small>*satu pilihan wajib dipilih</small>
+
+    <div class="buttons">
+      <button type="submit" class="submit-btn" id="submitBtn">Daftar Sekarang</button>
+      <button type="reset" class="reset-btn">Reset Form</button>
+    </div>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
